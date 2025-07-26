@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Personal Portpolio Website</title>
+    <!-- icon -->
+    <link rel="icon" href="./Assets/Images/cv.png">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Media stylesheet -->
+    <link rel="stylesheet" href="./CSS/media_query.css">
+    <!-- cdn for fontawesome -->
+    <script src="https://kit.fontawesome.com/5d64265b39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header start -->
+    <header id="header">
+        <main class="container">
+            <!-- navigation menu -->
+            <nav>
+                <!-- logo -->
+                <img src="./Assets/Images/VivekLogo" alt="logo-image" class="logo">
+                <!-- nav links -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill-section">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <!-- toggle switch -->
+                        <article class="container">
+                            <label class="switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider round"></span>
+                            </label>
+                        </article>
+                    </li>
+                    <!-- favicon -->
+                    <i class="fa-solid fa-xmark"></i>
+                </ul>
+            </nav>
+                <!-- favicon -->
+                <i class="fa-solid fa-bars"></i>
+        </main>
+    </header>
+    <!-- header end -->
+
+    <!-- home start -->
+    <section id="home">
+        <article class="home-text">
+            <!-- information -->
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Vivek</span> <br></h1>
+            <h2>from Pune</h2>
+            <!-- social icons -->
+            <article class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fab fa-facebook"></i
+                    ></a>
+                    <a href="https://www.twitter.com/" target="_blank"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://www.instagram.com/" target="_blank"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://www.whatsapp.com/" target="_blank"
+                    ><i class="fa-brands fa-square-whatsapp"></i
+                    ></a>
+              </article>
+              <!-- Resume button -->
+              <a href="./Assets/Resume/Vivek_Gaykar_Full_Stack.pdf" download="Vivek_Resume.pdf">
+                <button class="btn-resume">Download Resume<i class="fa-solid fa-download"></i></button>
+              </a>
+        </article>
+        <!-- profile picture -->
+        <article class="profile">
+            <img src="./Assets/Images/Vivek_BG_photo.png" alt="profile-image">
+        </article>
+    </section>
+    <!--home end -->
+
+    <!-- About start -->
+     <section id="about">
+        <main class="container">
+            <article class="row">
+                <!-- image -->
+                <article class="about-col-1">
+                    <img src="./Assets/Images/VIVEK_PHOTO.JPG" alt="user-image">
+                </article>
+                <!-- introduction -->
+                <article class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Highly skilled and motivated <strong>Full Stack Developer</strong> with <strong>3+ years</strong> of experience in designing and developing robust web applications. Proficient in both <strong>front-end and back-end</strong> technologies including <strong>HTML, CSS, JavaScript, Java, React and SQL</strong>. Strong problem-solving abilities and a delivering high quality solutions. Excellent communication and collaboration skills, ensuring seamless coordination within cross-functional teams. Dedicated to staying up-to-date with emerging technologies and industry best practices.</p>
+                    <article class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </article>
+                    <!-- skills  -->
+                    <article class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </article>
+                    <!-- experience -->
+                    <article class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2021-Dec 2021</span><br>Associate Software Engineer at Tech Mahindra</li>
+                            <li><span>Jan 2022-Feb 2023</span><br>Software Engineer at Tech Mahindra</li>
+                            <li><span>March 2023-Present</span><br>Full Stack Developer</li>
+                        </ul>
+                    </article>
+                    <!-- Education -->
+                    <article class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2020</span><br>Bachelor's of Computer Engineer</li>
+                            <li><span>2014-2017</span><br>Diploma in Computer Engineer</li>
+                            <li><span>2013-2014</span><br>SSC</li>
+                        </ul>
+                    </article>
+                </article>
+                <button class="btn-readmore"><a href="#services">Read More</a></button>
+            </article>
+        </main>
+     </section>
+    <!-- About end -->
+    
+    <!-- Skills start -->
+    <section id="skill-section">
+        <h1><i class="fa-solid fa-book-open"></i> My Skills</h1>
+                <article class="skills-content">
+                    <!-- skills progress bar & percentage data -->
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> Frontend Development</h2>
+                        <div class="progress-bar">
+                            <span class="percentage front-end"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2> <i class="fa-solid fa-circle-check"></i> Backend Development</h2>
+                        <div class="progress-bar">
+                            <span class="percentage back-end"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> Java</h2>
+                        <div class="progress-bar">
+                            <span class="percentage java"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> HTML</h2>
+                        <div class="progress-bar">
+                            <span class="percentage html"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> CSS</h2>
+                        <div class="progress-bar">
+                            <span class="percentage css"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> JavaScript</h2>
+                        <div class="progress-bar">
+                            <span class="percentage javascript"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> SQL</h2>
+                        <div class="progress-bar">
+                            <span class="percentage sql"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> GIT</h2>
+                        <div class="progress-bar">
+                            <span class="percentage git"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> GITHUB</h2>
+                        <div class="progress-bar">
+                            <span class="percentage github"></span>
+                        </div>
+                    </article>
+                
+                    <article class="progress-bar-container">
+                        <h2><i class="fa-solid fa-circle-check"></i> Microservices</h2>
+                        <div class="progress-bar">
+                            <span class="percentage microservice"></span>
+                        </div>
+                </article>
+        </article>
+    </section>
+    <!-- Skills end -->
+
+    <!-- Certificate start -->
+     <section id="certificate">
+        <main class="container">
+            <!-- certificate title -->
+            <h1 class="cert-text"><i class="fa-solid fa-certificate"></i>Certificate</h1>
+            <article class="row">
+                <!-- certificate 1 data -->
+                <article class="cert">
+                    <h2>Full Stack Developement</h2>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>07/Feb/2025</p>
+                    <a href="./Assets/Certificate & Awards/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf" target="_blank" class="cert-button"> 
+                        <button>Open <i class="fa-solid fa-certificate"></i></button>
+                    </a>
+                </article>
+                 <!-- certificate 2 data -->
+                <article class="cert">
+                    <h2>Azure</h2>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>10/Dec/2021</p>
+                    <a href="./Assets/Certificate & Awards/Azure Certificate.pdf" target="_blank" class="cert-button"> 
+                        <button>Open <i class="fa-solid fa-certificate"></i></button>
+                    </a>
+                </article>
+                 <!-- certificate 3 data -->
+                <article class="cert">
+                    <h2>RPA Developers</h2>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>02/Feb/2023</p>
+                    <a href="./Assets/Certificate & Awards/RPA Developer.pdf" target="_blank" class="cert-button"> 
+                        <button>Open <i class="fa-solid fa-certificate"></i></button>
+                    </a>
+                </article>
+                 <!-- certificate 4 data -->
+                <article class="cert">
+                    <h2>Automation Ninja</h2>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>09/Feb/2023</p>
+                    <a href="./Assets/Certificate & Awards/Automation Ninja.pdf" target="_blank" class="cert-button"> 
+                        <button>Open <i class="fa-solid fa-certificate"></i></button>
+                    </a>
+                </article>
+            </article>
+        </main>
+     </section>
+    <!-- Certificate end -->
+
+    <!-- Awards start -->
+     <section id="awards">
+        <main class="container">
+            <!-- heading -->
+            <h2><i class="fa-solid fa-star"></i> Awards</h2>
+            <article class="awards-row">
+                 <!-- awards 1 data -->
+                <article class="awards">
+                    <h3>Bravo Award</h3>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>Date :- 09/Oct/2024</p>
+                    <a href="./Assets/Certificate & Awards/Bravo Awards.pdf" target="_blank">
+                        <button>Open <i class="fa-solid fa-award"></i></button>
+                    </a>
+                </article>
+                 <!-- awards 2 data -->
+                <article class="awards">
+                    <h3>Pat on the Back Award</h3>
+                    <p class="name">Vivek Gaykar</p>
+                    <p>Date :- 09/Oct/2024</p>
+                    <a href="./Assets/Certificate & Awards/Pat on the Back Awards.pdf" target="_blank">
+                        <button>Open <i class="fa-solid fa-award"></i></button>
+                    </a>
+                </article>
+            </article>
+        </main>
+     </section>
+    <!-- Awards end -->
+    
+    <!-- Services start -->
+     <section id="services">
+        <main class="container">
+            <!-- heading -->
+            <h1 class="sub-title"><i class="fa-brands fa-servicestack"></i> My Services</h1>
+            <article class="services-list">
+                <!-- services information 1 -->
+                <article>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>It offers multiple services in the designing and development field. I have serve clients globally and provide assistance to grow business while competing on a global platform. Besides that, we build customized websites with cutting-edge technology and include updated features to ensure their work reliability.</p>
+                    <p>The designing methods we adopt are to attract users, increasing both engagement and conversion rates. I have hands-on experience with the technologies like Java, HTML, CSS, SQL, React, and Angular that helps us build an effective website in the minimum time possible.</p>
+                </article>
+                <!-- services information 2 -->
+                <article>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> UI/UX design in enhancing user satisfaction and engagement. I am conducting through research to understand user needs and behaviors, ensuring designs are tailored to target audiences.</p>
+                    <p>I am developing wireframes and interactive prototypes to visualize design concepts and gather user feedback early in the development process. I am creating aesthetically pleasing designs that align with brand identity, utilizing consistent color schemes, typography, and imagery and Performing tests to identify usability issues and iterating designs based on user feedback to enhance overall user satisfaction</p>
+                </article>
+                <!-- services information 3-->
+                <article>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App Design is in enhancing user engagement and satisfaction. I am understanding client objectives and user needs through comprehensive research.Translating research insights into design concepts and prototypes.</p>
+                    <p>I am iterating on designs based on feedback to align with user expectations. I am ensuring designs are adaptable across various devices and screen sizes, providing a seamless experience for all users.</p>
+                </article>
+            </article>
+        </main>
+     </section>
+    <!-- Services end -->
+
+    <!-- project start -->
+     <section id="projects">
+        <main class="container">
+            <!-- heading -->
+            <h1><i class="fa-solid fa-file-shield"></i> My Projects</h1>
+            <article class="my-projects">
+                <!-- project 1 data -->
+                <article>
+                    <h2>EENPM(BT Client)</h2>
+                    <img src="./Assets/Images/SRE.png" alt="SRE-image">
+                    <h3>Network Performance Management- British Telecommunication Client :-</h3>
+                    <br>
+                    <p>​The EENPM project refers to the EE Network Performance Monitoring initiative. EE, a subsidiary of British Telecommunications (BT), utilizes this Network Performance Monitoring tool to oversee and enhance its network's performance.</p>
+                    <p> EENPM is a Network Performance Management Tool, Which plays a key role in monitoring 2G, 4G and 5G Core as well as RAN Network Devices. The project EENPM includes the storing the data for 2G, 4G and 5G networks in Druid DB.</p>
+                    <br>
+                    <p><strong> Responsibility :-</strong>
+                        <ul>
+                            <li>Designing and Developing user interfaces and navgation menu.</li>
+                            <li>Addressed and xed complex bugs.</li>
+                            <li>Understanding requirement and implementation</li>
+                            <li>Testing websites during the development process for usability</li>
+                            <li>Testing websites during the development process for usability</li>
+                        </ul>
+                    </p>
+                </article> 
+                <!-- project 2 data -->
+                <article>
+                    <h2>VCG_SRE_AMS(Verizon Client) </h2>
+                    <img src="./Assets/Images/NPM.jpg" alt="NPM-image">
+                    <br>
+                    <p>​VCG_SRE_AMS is a project associated with Verizon, focusing on Site Reliability Engineering (SRE) and Application Management Services (AMS). The project involves working with various technologies, including Oracle SQL, Oracle DBA, Core Java, OOPS, Java, MySQL, Grafana, and Shell Scripting. ​
+                    </p>
+                    <br>
+                    <p><strong> Responsibility :-</strong>
+                        <ul>
+                            <li>Database roles/ privilege's</li>
+                            <li>Collaborate with a team of designers and developers to create userfriendly and visually appealing interface</li>
+                            <li>Design and implement e cient and scalable database structures</li>
+                            <li>Perform regular testing and debugging to identify and x any issues or bugs</li>
+                            <li>Troubleshoot and resolve any production issues or customerreported bugs in a timely manner.</li>
+                        </ul>
+                    </p>
+                </article>
+                <!-- project 3 data -->
+                <article> 
+                    <h2>Portfolio Website </h2>
+                    <img src="./Assets/Images/portfolio-website.png" alt="portfolio-image">
+                    <p>I was develop a personal portfolio website that serves as a central hub for showcasing my projects, skills, and professional journey. My website is mobile-friendly and adapts seamlessly to various screen sizes.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS, JavaScript</p>
+                </article>
+                <!-- project 4 data -->
+                <article>
+                    <h2>Travel Blog Website</h2>
+                    <img src="./Assets/Images/Travel Blog.png" alt="travelblog-image">
+                    <p>I was develop a travel blog website is an excellent way to showcase my web development skills and share my passion for travel that serves as a my adventures, trekking journey. My website is mobile-friendly and adapts seamlessly to various screen sizes</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS</p>
+                </article>
+                <!-- project 5 data -->
+                <article>
+                    <h2>CRUD Website</h2>
+                    <img src="./Assets/Images/CRUD" alt="CRUD-image">
+                    <p>I was develop a web application that allows users to Create, Read, Update, and Delete data, demonstrating my understanding of dynamic web applications.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS, JavaScript</p>
+                </article>
+                <!-- project 6 data -->
+                <article>
+                    <h2>E-commerce Website</h2>
+                    <img src="./Assets/Images/E-commerce.jpg" alt="E-commerce-image">
+                    <p>I was develop fully functional online store where users can browse products, add them to a cart, and complete purchases.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS, JavaScript,database</p>
+                </article>
+            </article>
+        </main>
+     </section>
+    <!-- project end -->
+
+    <!-- contact start -->
+     <section id="contact" class="contact">
+        <h3><i class="fa-solid fa-address-book"></i> Contact Us</h3>
+        <!-- contact information -->
+        <article class="contact-info">
+          <p>
+            If you have any questions or would you like to speak with me, please fill
+            out the form below or contact us using the information provided.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>Pune
+            </li>
+          </ul>
+        </article>
+        <!-- form details -->
+        <form action="#" class="form" name="submit-to-google-sheet">
+          <article class="form-group">
+            <input
+              type="name"
+              name="Name"
+              id="name"
+              placeholder="Enter Your Name"
+              required="required"
+            />
+          </article>
+          <article class="form-group">
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Enter Your Email"
+              required="required"
+            />
+          </article>
+          <article class="form-group">
+            <textarea
+              name="Message"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required="required"
+            ></textarea>
+          </article>
+          <button type="submit">Send Message</button>
+        </form>
+        <span id="msg">Hello</span>
+     </section>
+    <!-- contact end -->
+      
+      <!-- footer start -->
+      <footer>
+        <!-- social-icons -->
+        <article class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </article>
+        <!-- call and email button -->
+        <article class="button">
+            <a href="tel:7745808707" class="call-button">Call Us <i class="fas fa-phone-alt"></i></a>
+            <a href="mailto:vgaykar@gmail.com" class="email-button">Email Us <i class="fas fa-envelope"></i></a>
+        </article>
+        <!-- copyright information -->
+        <p>&copy; 2025 My Portfolio Website. All Rights Reserved.</p>
+      </footer>
+      <!-- footer end -->
+
+    <!-- Javascript code  -->
+     <script>
+        // skills education experience
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <!-- Toggle mode  -->
+     <script>
+            const toggleSwitch = document.getElementById("toggleSwitch");
+
+            toggleSwitch.addEventListener("change", () => {
+            if (toggleSwitch.checked) {
+                document.body.style.backgroundColor = "blue"; // New color when toggled
+            } else 
+            {
+                document.body.style.backgroundColor = "#080808"; // Default color
+            }
+            });
+   </script>
+
+   <!-- Nav menu -->
+   <script>
+            function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+            }
+   </script>
+
+   <!-- Contact form sheet -->
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwN2oQc35seKaczjm1geoCDQrFPSeuzBOSC20DHbL2yabmecXMGHdSb8P-4woVkrsA-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+        msg.innerHTML = "Messsage sent successfully."
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },1000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
