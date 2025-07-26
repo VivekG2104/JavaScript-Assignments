@@ -19,7 +19,7 @@ A simple and clean To-Do List application built with React, Vite, and Tailwind C
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone https://github.com/VivekG2104/React_Assignments.git
+git clone https://github.com/VivekG2104/JavaScript-Assignments.git
 cd react-todo-app
 npm install
 npm run dev
